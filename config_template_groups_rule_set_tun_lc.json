@@ -103,7 +103,6 @@
       "tag":"proxy",
       "type":"selector",
       "outbounds":[
-        "auto",
         "direct",
         "{all}"
       ]
@@ -134,26 +133,6 @@
         "proxy",
         "direct",
         "{all}"
-      ]
-    },
-    {
-      "tag":"auto",
-      "type":"urltest",
-      "outbounds":[
-        "HongKong"
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
-    },
-    {
-      "tag":"HongKong",
-      "type":"selector",
-      "outbounds":[
-        "{all}"
-      ],
-      "filter":[
-        {"action":"include","keywords":["🇭🇰|HK|hk|香港|港|HongKong"]}
       ]
     },
     {
